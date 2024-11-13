@@ -61,7 +61,7 @@ app.post('/login', (req, res) => {
             if (result) {
                 // Autenticación exitosa
                 req.session.usuario = user.usuario; // Almacenar el usuario en la sesión
-                res.status(200).send('Autenticación exitosa');
+                //res.status(200).send('Autenticación exitosa');
             } else {
                 // Contraseña incorrecta
                 res.status(401).send('El usuario/contraseña ingresado es incorrecto');
@@ -109,6 +109,6 @@ app.get('/logout', (req, res) => {
     });
 });
 
-app.listen(3001, () => {
-    console.log('Server running on http://localhost:3001');
+app.listen(3000, () => {
+    console.log('Server running on http://localhost:3000');
 });

@@ -12,6 +12,19 @@ body {
     align-items: center;
     background-color: #6B46C1;
 }
+.banner, .bannerRegistro {
+    background-image: url('/api/placeholder/360/180');
+    background-size: cover;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #101E26;
+}
 
 .container {
     background-color: #1a1a1a;
@@ -50,7 +63,9 @@ input {
     color: white;
     margin-bottom: 0.5rem;
 }
-
+.logo {
+    width: 100%;
+}
 input::placeholder {
     color: #9CA3AF;
 }
